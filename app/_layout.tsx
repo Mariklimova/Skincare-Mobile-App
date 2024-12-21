@@ -26,8 +26,8 @@ export default function RootLayout() {
   return (
     
       <Stack>
-        <Stack.Screen name="/" />
-        <Stack.Screen name="/categories" />
+        <Stack.Screen name="index" />
+        <Stack.Screen name="categories" />
         <Stack.Screen name="+not-found" />
       </Stack>
   );

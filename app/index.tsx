@@ -1,24 +1,25 @@
 import { Link } from "expo-router";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 // import image from '../assets/images/image.png';
-import Background from '../assets/images/image';
-import arrow from '../assets/images/arrowLeft.png';
-import group from '../assets/images/group.png';
+import BackgroundImage from '../assets/images/image';
+import ArrowLeft from '../assets/images/arrowLeft';
+import GroupStroke from '../assets/images/groupStroke';
 
 
 export default function Index() {
     return <>
         <View style={styles.wrapper}>
-            <Background style={{width: '100%'}}></Background>
-            {/* <Image source={image} style={styles.image}></Image> */}
+            <BackgroundImage style={{ width: '100%' }} />
             <View style={styles.info}>
                 <Text style={styles.title}>An Evolving</Text>
                 <Text style={styles.title}>collection of treatments</Text>
-                <Text style={styles.text}>The Ordinary is born to disallow commodity to be disguised as ingenuity. The Ordinary is "Clinical formulations with integrity".</Text>
-                <Image source={group}></Image>
+                <Text style={styles.text}>
+                    The Ordinary is born to disallow commodity to be disguised as ingenuity. The Ordinary is "Clinical formulations with integrity".
+                </Text>
+                <GroupStroke />
                 <Link href={'/categories'}>
                     <TouchableOpacity style={styles.btn}>
-                        <Image source={arrow}></Image>
+                        <ArrowLeft />
                     </TouchableOpacity>
                 </Link>
             </View>
@@ -30,11 +31,8 @@ const styles = StyleSheet.create({
     wrapper: {
         alignItems: 'center',
         backgroundColor: '#ECEADE',
-        flex:1
+        flex: 1
     },
-    // image: {
-    //     width: '100%'
-    // },
     info: {
         justifyContent: 'center',
         alignItems: 'center',
